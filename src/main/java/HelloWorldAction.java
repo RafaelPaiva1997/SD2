@@ -6,11 +6,13 @@ public class HelloWorldAction extends ActionSupport{
     private static final long serialVersionUID = 1L;
 
     private MessageStore messageStore;
+    private String hello;
 
     public String execute() throws Exception {
 
         messageStore = new MessageStore() ;
-        return SUCCESS;
+        hello = "bom dia crl";
+        return "rafas";
     }
 
     public MessageStore getMessageStore() {
@@ -19,5 +21,13 @@ public class HelloWorldAction extends ActionSupport{
 
     public void setMessageStore(MessageStore messageStore) {
         this.messageStore = messageStore;
+    }
+
+    public String getHello() {
+        return hello;
+    }
+
+    public void setHello(String hello) {
+        this.hello = hello;
     }
 }

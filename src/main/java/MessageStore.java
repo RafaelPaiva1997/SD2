@@ -1,12 +1,19 @@
+import com.opensymphony.xwork2.ActionSupport;
+
 /**
  * Created by Ting on 2017/1/19.
  */
-public class MessageStore {
+public class MessageStore extends ActionSupport{
     private String message;
 
     public MessageStore() {
 
-        setMessage("Hello Struts User");
+
+    }
+
+    public String execute() throws Exception {
+        message = "vai te fuder";
+        return "sucesso";
     }
 
     public String getMessage() {
