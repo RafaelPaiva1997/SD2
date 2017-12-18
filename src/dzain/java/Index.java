@@ -10,7 +10,7 @@ public class Index extends ActionSupport{
 
     public String execute() throws Exception {
 
-        return "sucesso";
+        return "rafa";
     }
 
     public String getOi() {

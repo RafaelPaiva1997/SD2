@@ -12,7 +12,7 @@ public class HelloWorldAction extends ActionSupport{
 
         messageStore = new MessageStore() ;
         hello = "bom dia crl";
-        return "rafas";
+        return "sucesso";
     }
 
     public MessageStore getMessageStore() {

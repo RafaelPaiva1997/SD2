@@ -9,15 +9,11 @@
 
     <package name="basic_struts" extends="struts-default">
 
-        <action name="index" class="Index" method="execute">
-            <result name="sucesso">/index.jsp</result>
+        <action name="index">
+            <result>/index.jsp</result>
         </action>
-        <action name="hello" class="HelloWorldAction" method="execute">
-            <result name="rafa">/HelloWorld.jsp</result>
-            <result name="rafas">/HelloWorld2.jsp</result>
-        </action>
-        <action name="message" class="MessageStore" method="execute">
-            <result name="sucesso">/Message.jsp</result>
+        <action name="login" class="Login" method="execute">
+            <result name="success">/Message.jsp</result>
         </action>
     </package>
 

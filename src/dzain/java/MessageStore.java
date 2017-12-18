@@ -7,12 +7,11 @@ public class MessageStore extends ActionSupport{
     private String message;
 
     public MessageStore() {
-
-
+        message = "vai te fuder";
     }
 
     public String execute() throws Exception {
-        message = "vai te fuder";
+
         return "sucesso";
     }
 
